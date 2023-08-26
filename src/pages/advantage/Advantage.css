@@ -1,0 +1,174 @@
+.background-3 {
+  background-image: url(../../assets/bg3.png);
+  background-size: cover;
+  width: 1024px;
+  height: 768px;
+  position: relative;
+}
+.advantage__message {
+  margin-top: 120px;
+  margin-left: 282px;
+}
+.advantage__info {
+  margin-left: 282px;
+  color: black;
+}
+.advantage__info p {
+  font-size: 100px;
+  letter-spacing: 6px;
+}
+.advantage__info span {
+  font-weight: var(--weight-600);
+}
+.advantage__card-section {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 5%;
+}
+.advantage__card-1 {
+  margin-top: 80px;
+  max-width: 412px;
+  max-height: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  padding: 50px 20px 100px 80px;
+  margin-left: 180px;
+  font-size: var(--h3-font-size);
+  color: black;
+}
+.advantage__card-icon-1 {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 67px;
+  top: 360px;
+  background-image: url(../../assets/icon2.png);
+  background-size: contain;
+}
+.advantage__card-icon-2 {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 58px;
+  top: 369px;
+  left: 690px;
+  background-image: url(../../assets/icon1.png);
+  background-size: contain;
+}
+.advantage__card-2 {
+  margin-top: 80px;
+  max-width: 263px;
+  max-height: 150px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  padding: 50px 20px 0px 40px;
+  font-size: var(--h3-font-size);
+  color: black;
+}
+.advantage__info-button {
+  position: absolute;
+  left: 640px;
+  bottom: 204px;
+}
+/* --------------------КАРТИНКИ НА ЗАДНЕМ ПЛАНЕ--------------------------*/
+.overlay-image-31 {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 45px;
+  width: 233px;
+  height: 688px;
+  background-image: url("../../assets/bottle.png");
+  background-size: contain;
+  z-index: 2;
+}
+.overlay-image-32 {
+  content: "";
+  position: absolute;
+  top: 74px;
+  left: 197px;
+  width: 37px;
+  height: 29px;
+  background-image: url("../../assets/buble2.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-33 {
+  content: "";
+  position: absolute;
+  top: 156px;
+  left: 184px;
+  width: 68px;
+  height: 69px;
+  background-image: url("../../assets/buble8.png");
+  background-size: contain;
+  z-index: 3;
+}
+.overlay-image-34 {
+  content: "";
+  position: absolute;
+  top: 213px;
+  left: 77px;
+  width: 34px;
+  height: 34px;
+  background-image: url("../../assets/buble4.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-35 {
+  content: "";
+  position: absolute;
+  top: 317px;
+  left: 186px;
+  width: 113px;
+  height: 112px;
+  background-image: url("../../assets/buble3.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-36 {
+  content: "";
+  position: absolute;
+  top: 403px;
+  left: 10px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../../assets/buble6.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-37 {
+  content: "";
+  position: absolute;
+  top: 550px;
+  left: 25px;
+  width: 75px;
+  height: 75px;
+  background-image: url("../../assets/buble5.png");
+  background-size: contain;
+  z-index: 3;
+}
+.overlay-image-38 {
+  content: "";
+  position: absolute;
+  top: 590px;
+  left: 242px;
+  width: 61px;
+  height: 61px;
+  background-image: url("../../assets/buble1.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-39 {
+  content: "";
+  position: absolute;
+  top: 703px;
+  left: 184px;
+  width: 141px;
+  height: 65px;
+  background-image: url("../../assets/buble7.png");
+  background-size: contain;
+  z-index: 3;
+}

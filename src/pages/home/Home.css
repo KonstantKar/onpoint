@@ -3,7 +3,7 @@
   background-size: cover;
   width: 1024px;
   height: 768px;
-  position: relative; /* Добавьте это свойство */
+  position: relative;
 }
 
 .home__greeting {
@@ -11,11 +11,13 @@
   letter-spacing: 4px;
 }
 .home__info {
+  position: relative;
   font-size: 90px;
   letter-spacing: 4px;
   z-index: 10;
   font-family: var(--third-font);
   font-weight: 400;
+  z-index: 2;
 }
 .home__info span {
   font-family: unset;
@@ -24,36 +26,12 @@
 }
 .home__info-button {
   position: absolute;
-  background-color: #ff6a9f;
-  font-family: var(--body-font);
-  font-size: var(--h3-font-size);
-  font-weight: var(--weight-500);
-  letter-spacing: 1px;
-  border-radius: 50px;
-  overflow: hidden;
-  width: 290px;
-  height: 80px;
-  margin-top: 25px;
-  margin-left: 50px;
-  text-align: center;
+  left: 530px;
+  bottom: 100px;
 }
-.home__info-button-icon {
-  display: inline-block;
-  background-color: var(--title-color);
-  padding: 15px 15px 15px 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: var(--text-white);
-  font-size: var(--large-font-size);
-  text-align: center;
-  margin-right: 20px;
-  box-shadow: -3px -3px 8px rgba(0, 0, 0, 0.3),
-    3px 3px 8px rgba(255, 255, 255, 0.3);
-  vertical-align: middle;
-}
+
 /* --------------------КАРТИНКИ НА ЗАДНЕМ ПЛАНЕ--------------------------*/
-.overlay-image-1 {
+.overlay-image-11 {
   content: "";
   position: absolute;
   top: 100px;
@@ -62,7 +40,7 @@
   background-image: url("../../assets/Layer\ 7.png");
   background-size: contain;
 }
-.overlay-image-2 {
+.overlay-image-12 {
   content: "";
   position: absolute;
   top: 78px;
@@ -72,7 +50,7 @@
   background-image: url("../../assets/Layer\ 5.png");
   background-size: contain;
 }
-.overlay-image-3 {
+.overlay-image-13 {
   content: "";
   position: absolute;
   top: 165px;
@@ -82,7 +60,7 @@
   background-image: url("../../assets/pink_sperm_1.png");
   background-size: contain;
 }
-.overlay-image-4 {
+.overlay-image-14 {
   content: "";
   position: absolute;
   top: 220px;
@@ -92,7 +70,7 @@
   background-image: url("../../assets/Layer\ 8.png");
   background-size: contain;
 }
-.overlay-image-5 {
+.overlay-image-15 {
   content: "";
   position: absolute;
   top: 500px;
@@ -103,7 +81,7 @@
   background-size: contain;
   z-index: 1;
 }
-.overlay-image-6 {
+.overlay-image-16 {
   content: "";
   position: absolute;
   top: 590px;
@@ -114,7 +92,7 @@
   background-size: contain;
   z-index: 1;
 }
-.overlay-image-7 {
+.overlay-image-17 {
   content: "";
   position: absolute;
   top: 600px;
@@ -125,7 +103,7 @@
   background-size: contain;
   z-index: 1;
 }
-.overlay-image-8 {
+.overlay-image-18 {
   content: "";
   position: absolute;
   top: 618px;

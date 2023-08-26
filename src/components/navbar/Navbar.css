@@ -31,4 +31,5 @@
   height: 12px;
   background-image: url("../../assets/Shape\ 1.png");
   background-size: contain;
+  z-index: 100;
 }

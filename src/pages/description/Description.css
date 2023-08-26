@@ -1,0 +1,102 @@
+.background-2 {
+  background-image: url(../../assets/bg2.png);
+  background-size: cover;
+  width: 1024px;
+  height: 768px;
+  position: relative;
+}
+.description__message {
+  margin-top: 120px;
+  letter-spacing: 4px;
+}
+
+.description__info {
+  position: relative;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 35px;
+  max-width: 760px;
+  max-height: 420px;
+  overflow: auto;
+  padding: 30px;
+  font-size: 22px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  scrollbar-width: thin;
+  scrollbar-color: #ff6a9f;
+}
+.description__info::-webkit-scrollbar {
+  width: 20px;
+}
+
+.description__info::-webkit-scrollbar-thumb {
+  background-color: #ff6a9f;
+  border-radius: 35px;
+}
+.description__info::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 35px;
+  width: 10px;
+}
+
+.description__info span {
+  font-weight: 600;
+  line-height: 0;
+}
+
+/* --------------------КАРТИНКИ НА ЗАДНЕМ ПЛАНЕ--------------------------*/
+.overlay-image-21 {
+  content: "";
+  position: absolute;
+  top: 110px;
+  left: 370px;
+  width: 655px;
+  height: 290px;
+  background-image: url("../../assets/Layer\ 3\ copy\ 6.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-22 {
+  content: "";
+  position: absolute;
+  top: 95px;
+  left: 580px;
+  width: 440px;
+  height: 200px;
+  background-image: url("../../assets/Layer\ 3\ copy\ 2.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-23 {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 710px;
+  width: 285px;
+  height: 135px;
+  background-image: url("../../assets/Layer\ 3\ copy\ 4.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-24 {
+  content: "";
+  position: absolute;
+  top: 400px;
+  left: 893px;
+  width: 130px;
+  height: 82px;
+  background-image: url("../../assets/Layer\ 3\ copy\ 3.png");
+  background-size: contain;
+  z-index: 1;
+}
+.overlay-image-25 {
+  content: "";
+  position: absolute;
+  top: 520px;
+  left: 893px;
+  width: 130px;
+  height: 80px;
+  background-image: url("../../assets/Layer\ 3\ copy\ 5.png");
+  background-size: contain;
+  z-index: 1;
+}

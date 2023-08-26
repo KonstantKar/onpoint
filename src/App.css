@@ -83,65 +83,9 @@ img {
   object-fit: cover;
 }
 
-/* Убираем полосы прокрутки */
-::-webkit-scrollbar {
-  display: none;
-}
 /* ========================= Повторяющийся CSS =========================== */
 
 .container {
   max-width: 892px;
   margin-inline: auto;
-}
-
-.grid {
-  display: grid;
-}
-
-.button {
-  display: inline-block;
-  color: var(--title-color);
-  border: 1px solid var(--first-color);
-  padding: 15px 70px 15px 30px;
-  border-radius: 35px;
-  font-family: var(--second-font);
-  font-size: var(--small-font-size);
-  font-weight: var(--weight-700);
-  position: relative;
-  transition: var(--transition);
-}
-.button:hover {
-  background-color: var(--first-color);
-  color: var(--text-white);
-}
-
-.button__icon {
-  background-color: var(--first-color);
-  position: absolute;
-  inset-block: -1px;
-  right: 0;
-  width: 50px;
-  border-radius: 50%;
-  color: var(--text-white);
-  font-size: var(--large-font-size);
-  text-align: center;
-  line-height: 60px;
-}
-.section__title {
-  padding-top: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: var(--h1-font-size);
-  font-weight: var(--weight-800);
-  gap: 10px;
-}
-.section__title span {
-  color: var(--first-color);
-}
-
-@media screen and (max-width: 1024px) {
-  .grid {
-    gap: unset;
-  }
 }
