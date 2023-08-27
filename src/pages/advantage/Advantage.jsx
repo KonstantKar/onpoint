@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Advantage.css";
 import Navbar from "../../components/navbar/Navbar";
 import Button from "../../components/button/Button";
 import { PiPlus } from "react-icons/pi";
-const Advantage = () => {
+import Popup from "./popup/Popup";
+const Advantage = ({ setCurrentSlide }) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
+  const containerClasses = `background ${isPopupOpen ? "bg2" : "bg1"}`;
+
   return (
-    <div className="background-3">
+    <div className={containerClasses}>
       <main className="advantage container ">
-        <Navbar />
+        <Navbar setCurrentSlide={setCurrentSlide} />
         <h2 className="advantage__message">КЛЮЧЕВОЕ СООБЩЕНИЕ</h2>
         <div className="advantage__info">
           <p>
@@ -24,9 +32,10 @@ const Advantage = () => {
             <span className="advantage__card-icon-2"></span>
           </div>
           <div className="advantage__info-button">
-            <Button text={"Подробнее"} icon={<PiPlus />} />
+            <Button text={"Подробнее"} icon={<PiPlus />} func={togglePopup} />
           </div>
         </div>
+        {isPopupOpen && <Popup togglePopup={togglePopup} />}
       </main>
       <div className="overlay-image-31"></div>
       <div className="overlay-image-32"></div>

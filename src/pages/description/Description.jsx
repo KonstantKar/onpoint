@@ -1,17 +1,16 @@
 import React from "react";
 import "./Description.css";
 import Navbar from "../../components/navbar/Navbar";
-const Description = () => {
+const Description = ({ setCurrentSlide }) => {
   return (
     <div className="background-2">
       <main className="description container ">
-        <Navbar />
+        <Navbar setCurrentSlide={setCurrentSlide} />
         <h2 className="description__message">
           ТЕКСТ <br />
           СООБЩЕНИЯ
         </h2>
-
-        <h1 className="description__info">
+        <div className="description__info">
           <p>
             <span>Lorem ipsum dolor sit amet</span>, consectetur. adipisicing
             elit.Rerum ab consequatur in, doloremque, nobis commodi, molestias
@@ -51,7 +50,7 @@ const Description = () => {
             culpa harum sapiente provident aut, dicta aspernatur, doloribus
             enim, omnis quibusdam!
           </p>
-        </h1>
+        </div>
       </main>
       <div className="overlay-image-21"></div>
       <div className="overlay-image-22"></div>

@@ -3,11 +3,11 @@ import "./Home.css";
 import Navbar from "../../components/navbar/Navbar";
 import Button from "../../components/button/Button";
 import { FaArrowRight } from "react-icons/fa";
-const Home = () => {
+const Home = ({ setCurrentSlide }) => {
   return (
     <div className="background-1">
       <main className="home container ">
-        <Navbar />
+        <Navbar setCurrentSlide={setCurrentSlide} />
         <h2 className="home__greeting">ПРИВЕТ,</h2>
 
         <h1 className="home__info">
@@ -15,7 +15,7 @@ const Home = () => {
             ЭТО <span>НЕ</span> <br /> КОММЕРЧЕСКОЕ <br />
             ЗАДАНИЕ
           </p>
-          <div className="home__info-button">
+          <div className="home__info-button" onClick={() => setCurrentSlide(1)}>
             <Button text={"Что дальше?"} icon={<FaArrowRight />} />
           </div>
         </h1>

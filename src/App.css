@@ -1,12 +1,32 @@
 /* ========================= Google Fonts =========================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 
+.slide-container {
+  display: flex;
+  width: 300vw; /* Все слайды в ряд */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.background-1,
+.background-2,
+.background-3 {
+  width: 100vw;
+  height: 100vh;
+  flex: none;
+}
 /* ========================= CSS Вариации =========================== */
 :root {
   /* ========================= Цвета =========================== */
   --first-color: #960018;
   --title-color: hsl(0, 0%, 10%);
-  --text-color: hsl(0, 0%, 50%);
+  --text-color: hsl(0, 0%, 10%);
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(0, 0%, 93%);
   --border-color: hsl(0, 0%, 87%);
@@ -24,7 +44,7 @@
   --small-font-size: 15px;
   --smaller-font-size: 14px;
   --tiny-font-size: 12px;
-  --transition: all 800ms ease;
+  --transition: all 1400ms ease;
   /* ========================= Насыщенность шрифта =========================== */
   --weight-400: 400;
   --weight-500: 500;

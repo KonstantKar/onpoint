@@ -1,0 +1,78 @@
+.advantage__popup {
+  position: absolute;
+  background-color: white;
+  width: 820px;
+  height: 560px;
+  left: 140px;
+  top: 130px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  overflow: hidden;
+}
+.popup__closer {
+  position: absolute;
+  left: 750px;
+  top: 20px;
+  font-size: 36px;
+}
+.popup__message {
+  margin-left: 210px;
+  margin-top: 32px;
+  letter-spacing: 4px;
+}
+.popup-title {
+  position: absolute;
+  left: 210px;
+  top: 50px;
+  font-size: 100px;
+  letter-spacing: 4px;
+  color: black;
+  letter-spacing: 10px;
+}
+.advantage__popup span {
+  font-weight: var(--weight-600);
+}
+.popup__dignities {
+  margin-top: 150px;
+  margin-left: 210px;
+  display: flex;
+  flex-direction: column;
+}
+.dignitie__container {
+  margin-bottom: 36px;
+}
+.dignitie__number {
+  font-family: var(--body-font);
+  font-weight: 700;
+  color: #8cc9e8;
+}
+.dignitie__message {
+  font-size: 25px;
+}
+.popup__pagination {
+  margin-left: 210px;
+  display: flex;
+}
+.active {
+  background-color: #fc6da9;
+}
+
+.popup__pagination button {
+  border: 2px solid black;
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.popup__pagination button:hover {
+  background-color: #fc6da9;
+}
+.popup__pagination button.active {
+  color: white; /* Сделаем номер активной страницы белым на розовом фоне */
+}

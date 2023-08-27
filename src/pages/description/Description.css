@@ -11,7 +11,7 @@
 }
 
 .description__info {
-  position: relative;
+  position: absolute;
   margin-top: 50px;
   background-color: white;
   border-radius: 35px;
@@ -23,18 +23,31 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 2;
   scrollbar-width: thin;
-  scrollbar-color: #ff6a9f;
+  color: black;
+  direction: rtl;
+  left: 136px;
 }
+
+.description__info p {
+  direction: ltr; /* Восстанавливаем направление текста на прежнее (слева направо) */
+}
+
 .description__info::-webkit-scrollbar {
   width: 20px;
 }
 
 .description__info::-webkit-scrollbar-thumb {
-  background-color: #ff6a9f;
+  background: linear-gradient(
+    135deg,
+    #d14e82,
+    #ff6a9f,
+    #fa86af,
+    hsl(339, 94%, 81%)
+  );
   border-radius: 35px;
+  margin-right: 100px;
 }
 .description__info::-webkit-scrollbar-track {
-  background-color: black;
   border-radius: 35px;
   width: 10px;
 }
@@ -47,6 +60,7 @@
 /* --------------------КАРТИНКИ НА ЗАДНЕМ ПЛАНЕ--------------------------*/
 .overlay-image-21 {
   content: "";
+  opacity: 0;
   position: absolute;
   top: 110px;
   left: 370px;
@@ -55,9 +69,11 @@
   background-image: url("../../assets/Layer\ 3\ copy\ 6.png");
   background-size: contain;
   z-index: 1;
+  animation: appearAndMove2 2s ease-in-out 1s forwards;
 }
 .overlay-image-22 {
   content: "";
+  opacity: 0;
   position: absolute;
   top: 95px;
   left: 580px;
@@ -66,9 +82,11 @@
   background-image: url("../../assets/Layer\ 3\ copy\ 2.png");
   background-size: contain;
   z-index: 1;
+  animation: appearAndMove2 3s ease-in-out 2s forwards;
 }
 .overlay-image-23 {
   content: "";
+  opacity: 0;
   position: absolute;
   top: 90px;
   left: 710px;
@@ -77,9 +95,11 @@
   background-image: url("../../assets/Layer\ 3\ copy\ 4.png");
   background-size: contain;
   z-index: 1;
+  animation: appearAndMove2 4s ease-in-out 3s forwards;
 }
 .overlay-image-24 {
   content: "";
+  opacity: 0;
   position: absolute;
   top: 400px;
   left: 893px;
@@ -88,9 +108,11 @@
   background-image: url("../../assets/Layer\ 3\ copy\ 3.png");
   background-size: contain;
   z-index: 1;
+  animation: appearAndMove2 2s ease-in-out 1s forwards;
 }
 .overlay-image-25 {
   content: "";
+  opacity: 0;
   position: absolute;
   top: 520px;
   left: 893px;
@@ -99,4 +121,19 @@
   background-image: url("../../assets/Layer\ 3\ copy\ 5.png");
   background-size: contain;
   z-index: 1;
+  animation: appearAndMove2 2s ease-in-out 1s forwards;
+}
+/* ------------ Анимации -------------- */
+@keyframes appearAndMove2 {
+  0% {
+    opacity: 0; /* Начальное состояние: изображение невидимо */
+    transform: translate(50px, 50px); /* Начальное состояние: нет смещения */
+  }
+  100% {
+    opacity: 1; /* Конечное состояние: изображение видимо */
+    transform: translate(
+      0px,
+      0px
+    ); /* Конечное состояние: смещение наискось вверх влево */
+  }
 }
