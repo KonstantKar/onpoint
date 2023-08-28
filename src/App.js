@@ -37,7 +37,7 @@ function App() {
     if (isAnimating) {
       const timeout = setTimeout(() => {
         setIsAnimating(false);
-      }, 500); // Продолжительность анимации
+      }, 500);
       return () => clearTimeout(timeout);
     }
   }, [isAnimating]);

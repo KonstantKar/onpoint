@@ -11,10 +11,10 @@
 }
 .description__info {
   max-width: 840px;
-  max-height: 445px; /* Установите желаемую высоту */
-  overflow: scroll; /* или overflow: scroll; */
+  max-height: 445px;
+  overflow: scroll;
   direction: rtl;
-  position: relative; /* Добавьте позиционирование */
+  position: relative;
   padding: 10px;
   z-index: 2;
 }
@@ -138,14 +138,11 @@
 /* ------------ Анимации -------------- */
 @keyframes appearAndMove2 {
   0% {
-    opacity: 0; /* Начальное состояние: изображение невидимо */
-    transform: translate(50px, 50px); /* Начальное состояние: нет смещения */
+    opacity: 0;
+    transform: translate(50px, 50px);
   }
   100% {
-    opacity: 1; /* Конечное состояние: изображение видимо */
-    transform: translate(
-      0px,
-      0px
-    ); /* Конечное состояние: смещение наискось вверх влево */
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
