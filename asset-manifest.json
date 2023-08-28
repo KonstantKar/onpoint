@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/onpoint/static/css/main.b96d9339.css",
+    "main.js": "/onpoint/static/js/main.fff60643.js",
+    "static/media/bg2.png": "/onpoint/static/media/bg2.26193cbeea047819bf86.png",
+    "static/media/bg3.png": "/onpoint/static/media/bg3.e517331c5074bce0d748.png",
+    "static/media/bg.png": "/onpoint/static/media/bg.6c2f6a3c83d96c0eccc8.png",
+    "static/media/bottle.png": "/onpoint/static/media/bottle.a6dc1ae7aa88cd8243a0.png",
+    "static/media/Layer 3 copy 6.png": "/onpoint/static/media/Layer 3 copy 6.ab010f9939250ca344f1.png",
+    "static/media/Layer 4.png": "/onpoint/static/media/Layer 4.5ae090e84b739d554411.png",
+    "static/media/pink_sperm_1.png": "/onpoint/static/media/pink_sperm_1.d2eaefa8f6b77dd6260b.png",
+    "static/media/Layer 3 copy 2.png": "/onpoint/static/media/Layer 3 copy 2.427502ec26ebd44b7ca8.png",
+    "static/media/Layer 8.png": "/onpoint/static/media/Layer 8.d2f947f76518f844b03c.png",
+    "static/media/Layer 7.png": "/onpoint/static/media/Layer 7.e95229c6116a8805d8e4.png",
+    "static/media/pink_sperm.png": "/onpoint/static/media/pink_sperm.14da4027d2837fc25ecd.png",
+    "static/media/Layer 3 copy 3.png": "/onpoint/static/media/Layer 3 copy 3.f8b6b960f6f65aa2d534.png",
+    "static/media/Layer 4 copy.png": "/onpoint/static/media/Layer 4 copy.f21c7b2f3e3f9f3eae4c.png",
+    "static/media/Layer 3 copy 4.png": "/onpoint/static/media/Layer 3 copy 4.25b20a2c8da44fb1e211.png",
+    "static/media/buble3.png": "/onpoint/static/media/buble3.a546ed4a7a039b546040.png",
+    "static/media/bakti_1.png": "/onpoint/static/media/bakti_1.1ef85098da034348801f.png",
+    "static/media/buble7.png": "/onpoint/static/media/buble7.a71cb9b37745975630b1.png",
+    "static/media/Layer 5.png": "/onpoint/static/media/Layer 5.e6e171976ffc3c4cacf0.png",
+    "static/media/Layer 3 copy 5.png": "/onpoint/static/media/Layer 3 copy 5.2d49b32967789c9b5882.png",
+    "static/media/buble5.png": "/onpoint/static/media/buble5.19c869cf40b6b3b24812.png",
+    "static/media/buble8.png": "/onpoint/static/media/buble8.2a341a1e9be9f537fd86.png",
+    "static/media/buble1.png": "/onpoint/static/media/buble1.bf62b8f5cff4d4df123e.png",
+    "static/media/Rectangle 9.png": "/onpoint/static/media/Rectangle 9.d970337fc0f204a3f94e.png",
+    "index.html": "/onpoint/index.html",
+    "main.b96d9339.css.map": "/onpoint/static/css/main.b96d9339.css.map",
+    "main.fff60643.js.map": "/onpoint/static/js/main.fff60643.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b96d9339.css",
+    "static/js/main.fff60643.js"
+  ]
+}
