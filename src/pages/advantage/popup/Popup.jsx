@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Popup.css";
 import { GrClose } from "react-icons/gr";
+import { AiOutlineLeft } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 const Popup = ({ togglePopup }) => {
   const [dignities] = useState([
     { number: "1", message: "Ipsum, dolor sit amet consectetur!" },
@@ -45,13 +47,17 @@ const Popup = ({ togglePopup }) => {
           ))}
         </div>
         <div className="popup__pagination">
+          <AiOutlineLeft />
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index}
-              className={currentPage === index + 1 ? "active" : ""}
+              className={`popup__pagination-button ${
+                currentPage === index + 1 ? "active" : ""
+              }`}
               onClick={() => handlePageChange(index + 1)}
             ></button>
           ))}
+          <AiOutlineRight />
         </div>
       </div>
     </>

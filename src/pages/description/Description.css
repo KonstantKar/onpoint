@@ -9,27 +9,14 @@
   margin-top: 120px;
   letter-spacing: 4px;
 }
-
 .description__info {
-  position: absolute;
-  margin-top: 50px;
-  background-color: white;
-  border-radius: 35px;
-  max-width: 760px;
-  max-height: 420px;
-  overflow: auto;
-  padding: 30px;
-  font-size: 22px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  scrollbar-width: thin;
-  color: black;
+  max-width: 840px;
+  max-height: 445px; /* Установите желаемую высоту */
+  overflow: scroll; /* или overflow: scroll; */
   direction: rtl;
-  left: 136px;
-}
-
-.description__info p {
-  direction: ltr; /* Восстанавливаем направление текста на прежнее (слева направо) */
+  position: relative; /* Добавьте позиционирование */
+  padding: 10px;
+  z-index: 2;
 }
 
 .description__info::-webkit-scrollbar {
@@ -45,16 +32,31 @@
     hsl(339, 94%, 81%)
   );
   border-radius: 35px;
-  margin-right: 100px;
-}
-.description__info::-webkit-scrollbar-track {
-  border-radius: 35px;
-  width: 10px;
 }
 
+.description__info::-webkit-scrollbar-track {
+  border-radius: 35px;
+  margin-top: 50px;
+  width: 10px;
+}
+.description__info::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.description__info p {
+  max-width: 770px;
+  background-color: white;
+  margin-top: 35px;
+  padding: 35px 50px 35px 30px;
+  font-size: 22px;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  direction: ltr;
+  position: relative;
+  z-index: 100;
+}
 .description__info span {
   font-weight: 600;
-  line-height: 0;
 }
 
 /* --------------------КАРТИНКИ НА ЗАДНЕМ ПЛАНЕ--------------------------*/
@@ -122,6 +124,16 @@
   background-size: contain;
   z-index: 1;
   animation: appearAndMove2 2s ease-in-out 1s forwards;
+}
+.overlay-image-26 {
+  position: absolute;
+  top: 262px;
+  left: 73.5px;
+  width: 5px;
+  height: 378px;
+  background-image: url("../../assets/Rectangle\ 1.png");
+  background-size: contain;
+  z-index: 1;
 }
 /* ------------ Анимации -------------- */
 @keyframes appearAndMove2 {

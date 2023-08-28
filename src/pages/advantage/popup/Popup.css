@@ -40,6 +40,7 @@
 }
 .dignitie__container {
   margin-bottom: 36px;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .dignitie__number {
   font-family: var(--body-font);
@@ -52,9 +53,6 @@
 .popup__pagination {
   margin-left: 210px;
   display: flex;
-}
-.active {
-  background-color: #fc6da9;
 }
 
 .popup__pagination button {
@@ -74,5 +72,15 @@
   background-color: #fc6da9;
 }
 .popup__pagination button.active {
-  color: white; /* Сделаем номер активной страницы белым на розовом фоне */
+  background-color: #fc6da9;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Description.css";
 import Navbar from "../../components/navbar/Navbar";
 const Description = ({ setCurrentSlide }) => {
+  const textRef = useRef(null);
   return (
     <div className="background-2">
       <main className="description container ">
@@ -10,7 +11,7 @@ const Description = ({ setCurrentSlide }) => {
           ТЕКСТ <br />
           СООБЩЕНИЯ
         </h2>
-        <div className="description__info">
+        <div className="description__info" ref={textRef}>
           <p>
             <span>Lorem ipsum dolor sit amet</span>, consectetur. adipisicing
             elit.Rerum ab consequatur in, doloremque, nobis commodi, molestias
@@ -24,31 +25,20 @@ const Description = ({ setCurrentSlide }) => {
             culpa harum sapiente provident aut, dicta aspernatur, doloribus
             enim, omnis quibusdam!Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Doloremque, corporis. Corporis doloribus placeat
-            beatae. Cupiditate dolore magnam debitis atque culpa harum sapiente
-            provident aut, dicta aspernatur, doloribus enim, omnis
-            quibusdam!Doloremque, corporis. Corporis doloribus placeat beatae.
-            Cupiditate dolore magnam debitis atque culpa harum sapiente
-            provident aut, dicta aspernatur, doloribus enim, omnis
+            beatae. omnis quibusdam!Doloremque, corporis. Corporis doloribus
+            placeat beatae. Cupiditate dolore magnam debitis atque culpa harum
+            sapiente provident aut, dicta aspernatur, doloribus enim, omnis
             quibusdam!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Doloremque, corporis. Corporis doloribus placeat beatae. Cupiditate
             dolore magnam debitis atque culpa harum sapiente provident aut,
-            dicta aspernatur, doloribus enim, omnis quibusdam!Doloremque,
+            dicta aspernatur, doloribus enim, omnis quibusdam!Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Doloremque, corporis.
+            Corporis doloribus placeat beatae. omnis quibusdam!Doloremque,
             corporis. Corporis doloribus placeat beatae. Cupiditate dolore
             magnam debitis atque culpa harum sapiente provident aut, dicta
-            aspernatur, doloribus enim, omnis quibusdam!Сonsectetur adipisicing
-            elit. Doloremque, corporis. Corporis doloribus placeat beatae.
-            Cupiditate dolore magnam debitis atque culpa harum sapiente
-            provident aut, dicta aspernatur, doloribus enim, omnis
-            quibusdam!Doloremque, corporis. Corporis doloribus placeat beatae.
-            Cupiditate dolore magnam debitis atque culpa harum sapiente
-            provident aut, dicta aspernatur, doloribus enim, omnis
-            quibusdam!Сonsectetur adipisicing elit. Doloremque, corporis.
-            Corporis doloribus placeat beatae. Cupiditate dolore magnam debitis
-            atque culpa harum sapiente provident aut, dicta aspernatur,
-            doloribus enim, omnis quibusdam!Doloremque, corporis. Corporis
-            doloribus placeat beatae. Cupiditate dolore magnam debitis atque
-            culpa harum sapiente provident aut, dicta aspernatur, doloribus
-            enim, omnis quibusdam!
+            aspernatur, doloribus enim, omnis quibusdam!Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Doloremque, corporis. Corporis
+            doloribus placeat beatae.
           </p>
         </div>
       </main>
@@ -57,6 +47,7 @@ const Description = ({ setCurrentSlide }) => {
       <div className="overlay-image-23"></div>
       <div className="overlay-image-24"></div>
       <div className="overlay-image-25"></div>
+      <div className="overlay-image-26"></div>
     </div>
   );
 };
